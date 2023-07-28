@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN 手寫辨識</title>
+</head>
+<body onload="init()">
+    <div class="inputoutput">
+        <img id="canvasInput" alt="No Image" />
+        <div class="caption">原圖 <input type="file" id="inputfile">
+        </div>
+      </div>
+    <button onclick="submit()">辨識開始</button>
+    <br>
+    <br>
+    <br>
+    <div>預測結果: <span id="predit_result"></span></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0"></script>
+    <script src="https://prfengaitools.com/models/cifar10_2/index.js"></script>
+</body>
+</html>
