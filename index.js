@@ -1,6 +1,6 @@
 
 async function init(){
-    model= await tf.loadLayersModel('https://prfengaitools.com/models/cifar10_2/model.json');
+    model= await tf.loadLayersModel('https://github.com/PeterLi-1991/asda/blob/main/model.json');
     console.log('load model...');
 }
 
